@@ -30,7 +30,7 @@ class ImmobileController extends Controller
     
     public function show($id)
     {
-        $immobile = Immobile::find($id);
+        $immobile = Immobile::where('immobiles_code',$id)->first();
         return response()->json($immobile);
     }
 

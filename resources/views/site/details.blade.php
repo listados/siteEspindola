@@ -295,7 +295,7 @@
                                     </li>
                                     <li>Valor IPTU:
                                         <button type="button" class="btn btn-default" title="IPTU" data-toggle="popover"
-                                            data-placement="top" data-content="Valor Mensal"
+                                            data-placement="top" data-content="Este campo corresponde ao valor médio mensal do IPTU com as taxas do município"
                                             style="border-color: #fff; border-radius: 100px;">
                                             <i class="fa fa-question-circle" title="click para mais Informações"></i>
                                         </button>
