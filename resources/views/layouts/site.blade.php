@@ -48,7 +48,6 @@
          var url = window.location.origin;
          //window.onscroll = function() {scrollFunction()};
 
-            console.log(domain_complet);
 
       </script>
       <!-- End of espindola Zendesk Widget script -->
