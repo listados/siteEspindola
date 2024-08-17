@@ -42,7 +42,7 @@
       <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=31fa0b5e-57fe-49ec-b897-5909920d237e"> </script>
       <script>
          //GLOBALIZANDO URL
-         var project_survey = ':4200';
+         var project_survey = '';
          domin  =  window.location.protocol + "//" + window.location.hostname;
          var domain_complet = domin + project_survey; 
          var url = window.location.origin;
