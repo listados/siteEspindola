@@ -34,25 +34,6 @@
 				</div>
 			</div>
 			@endif
-			<!--
-			<div class="col-md-4 pull-right">
-				{{Form::open(['url' => \Request::fullUrl() , 'method' => 'get'])}}
-				<select name="orderSearch" id="orderSearch" onchange="this.form.submit();" class="form-control">
-					<option value="">Ordenar por</option>
-					<option value="1">Menor area</option>
-					<option value="2">Maior area</option>
-					<option value="3">Menor valor</option>
-					<option value="4">Maior valor</option>
-				</select>
-				{{-- {{Form::hidden('opcao', $_GET['opcao'])}}  --}}
-				@if( isset($_GET['typeImmobile']) )
-					@foreach ($_GET['typeImmobile'] as $item => $value_type)
-					<input type="hidden" name="typeImmobile[]" value="{{$value_type}}">
-					@endforeach					
-				@endif
-				{{-- {{Form::hidden('region-immobile', $_GET['region-immobile'])}}  --}}
-				{{Form::close()}}
-			</div> -->
 			<div class="clear"></div>
 		</div><!-- end property listing header -->
 
@@ -171,5 +152,5 @@ immobile = '{{ $immobile }}';
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBisdaSyLJ4WC4bFxEFA5rdhGq_8B1B52I&sensor=false"></script>
 
-{{ Html::script('public/js/map.js') }}
+{{ Html::script('js/map.js') }}
 @endpush
