@@ -46,7 +46,6 @@
     <section class="module">
         <div class="container">
             <div class="row">
-            {{-- @include('site.div-whatsapp') --}}
                 <div class="col-lg-8 col-md-8">
                     <div class="property-single-item property-main">
                         <div class="property-header">
@@ -248,8 +247,6 @@
                         <div class="tabs">
                             <ul>
                                 <li><a href="#tabs-1"><i class="fa fa-pencil icon"></i>Mais Detalhes</a></li>
-                                {{-- <li><a href="#tabs-2"><i class="fa fa-crop icon">  </i>Planta Baixa</a></li>
-                            <li><a href="#tabs-3"><i class="fa fa-key icon"></i>Reservar Chaves</a></li> --}}
                                 @if ($immobile->immobiles_finality == 'Comercial')
                                     {{-- <li><a href="#tabs-2"> Adequabilidade </a></li> --}}
                                 @endif
@@ -542,7 +539,6 @@
                                 <span>Corretor</span> <img class="divider-hex" src="images/divider-half.png" alt="" />
                                 <div class="divider-fade"></div>
                             </h4>
-                            {{-- <img src="https://static.wixstatic.com/media/cffaeb_902df736c84047c0a0f77378efc0c7c8~mv2_d_5125_2883_s_4_2.jpg/v1/fill/w_1013,h_570,al_c,q_85,usm_0.66_1.00_0.01/cffaeb_902df736c84047c0a0f77378efc0c7c8~mv2_d_5125_2883_s_4_2.jpg" alt="" /> --}}
                             <div class="agent">
                                 <a href="#" class="agent-img">
                                     <div class="img-fade"></div>
@@ -660,23 +656,6 @@
                                     <i class="fa fa-whatsapp"></i>
                                     Mande um Whatsapp</a>
                             </div>
-                            {{-- <div class="form-block ">
-                            @if ($id_agency == 1)
-                            <div class="agent-details">
-                                <p><i class="fa fa-tag icon"></i>Agência Aldeota</p>
-                                <p><i class="fa fa-envelope icon"></i>meajuda@espindolaimobiliaria.com.br</p>
-                                <p><i class="fa fa-phone icon"></i>(85) 3461-1166</p>
-                                <p><i class="fa fa-whatsapp icon"></i>(85) 98810-1166</p>
-                            </div>
-                            @else
-                            <div class="agent-details">
-                                <p><i class="fa fa-tag icon"></i>Agência Fátima</p>
-                                <p><i class="fa fa-envelope icon"></i>meajuda@espindolaimobiliaria.com.br</p>
-                                <p><i class="fa fa-phone icon"></i>(85) 3461-1166</p>
-                                <p><i class="fa fa-whatsapp icon"></i>(85) 98810-1166</p>
-                            </div>
-                            @endif
-                        </div> --}}
                         </div>
                         <!-- end widget content -->
                     </div>
@@ -775,8 +754,9 @@
         }(document, "script", "twitter-wjs"));
     </script>
     <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBisdaSyLJ4WC4bFxEFA5rdhGq_8B1B52I"></script>
-    {{ Html::script('public/js/map-single.js') }}
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBisdaSyLJ4WC4bFxEFA5rdhGq_8B1B52I">
+    </script>
+    {{ Html::script('js/map-single.js') }}
     <script type="text/javascript">
         code_immobile = '{{ $immobile->immobiles_code }}';
         $(document).ready(function() {
@@ -786,16 +766,13 @@
         $(function() {
             $('[data-toggle="tooltip"]').tooltip();
             $('[data-toggle="popover"]').popover();
-            //property-gallery-thumb
+
             $("#btn_shared").click(function(e) {
-                //$("#infoShared").show();
+
                 e.preventDefault();
-                // setTimeout(() => {
-                //    $("#infoShared").hide();
-                // }, 3000);
                 new PNotify({
                     title: 'Copiado',
-                    text: 'Esse link foi copiado para sua área de transferencia.',
+                    text: 'Esse link foi copiado para sua área de transferência.',
                     type: 'info',
                     icon: 'fa fa-info-circle',
                     styling: 'fontawesome',

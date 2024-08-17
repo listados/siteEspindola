@@ -6,9 +6,8 @@ function initialize() {
     center: new google.maps.LatLng(lat, log)
   };
 
-var map = new google.maps.Map(document.getElementById('map-single'),
-      mapOptions);
-
+var map = new google.maps.Map(document.getElementById('map-single'), mapOptions);
+console.log({map})
 
 // MARKERS
 /****************************************************************/

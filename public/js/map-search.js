@@ -10,6 +10,8 @@
                         mapTypeId: google.maps.MapTypeId.ROADMAP,
                         zoom: 10
                       });
+                      console.log({map})
+
 
                         var defaultBounds = new google.maps.LatLngBounds(
                           new google.maps.LatLng('39', '-76'),
