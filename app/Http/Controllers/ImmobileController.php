@@ -9,6 +9,7 @@ namespace SiteEspindola\Http\Controllers;
 
 use SiteEspindola\Immobile;
 use Illuminate\Http\Request;
+use DB;
 
 class ImmobileController extends Controller
 {
@@ -29,7 +30,7 @@ class ImmobileController extends Controller
     
     public function show($id)
     {
-        $immobile = Immobile::find($id);
+        $immobile = Immobile::where('immobiles_code',$id)->first();
         return response()->json($immobile);
     }
 
@@ -39,7 +40,18 @@ class ImmobileController extends Controller
         return response()->json($immobile);
     }
 
-    public function create(Request $request) {
-        return $request->all();
+    public function getImmobileByCode($code)
+   {
+	$immobile = DB::table('immobiles')
+		->join('photo_immobiles', 'immobiles.immobiles_code', '=',
+		 'photo_immobiles.photo_immobiles_code_immobile')
+		->where('photo_immobiles.photo_immobiles_code_immobile', '=',
+		$code)->get();
+
+	return response()->json($immobile);
     }
+
+
+
+
 }

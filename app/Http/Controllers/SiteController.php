@@ -274,8 +274,9 @@ public function show($id)
         // return $district;
 
         Location::createLocation(self::$agent, self::$ip, self::$route, self::$lat, self::$log, self::$city, self::$country, self::$region, self::$timezone, self::$page_previous, self::$date);
-
-        $meta_site = ['url' => url('/imovel/'.$id) , 'title' => $page_title , 'type' => 'website' , 'description' => $description , 'image' => $photo_immobile_featured[0]->photo_immobiles_url];
+        $imageFeature = '';
+        count($photo_immobile_featured) > 0 ? $imageFeature = $photo_immobile_featured[0]->photo_immobiles_url : $imageFeature = '';    
+        $meta_site = ['url' => url('/imovel/'.$id) , 'title' => $page_title , 'type' => 'website' , 'description' => $description , 'image' => $imageFeature];
         //SEGURO INCENDIO
         if($immobile->immobiles_rental_price < 300){
             $price_insurance_fire = 300;
@@ -504,9 +505,10 @@ public function sendContact(Request $request)
     $date = Carbon::parse($date_send, 'UTC');
     $date = $date->format('d \d\e F \d\e Y H:m');
     $agency = "Ag. Aldeota";
-    $mail = \Mail::to('meajuda@espindolaimobiliaria.com.br')->send(new ContactMail($immobile, $contact, $date, $agency ));
-   
-    if($mail)
+    
+    $mail = \Mail::to('contato@espindolaimobiliaria.com.br')->cc('contato@espindolaimobiliaria.com.br')->send(new ContactMail($immobile, $contact, $date, $agency ));
+
+    if(is_null($mail))
     {
         return response()->json(['message' => 'success']);
 
@@ -559,7 +561,7 @@ public function reserveKey(Request $request)
     $contact->agency            = $request['agency'];
 
     try {
-        \Mail::to('meajuda@espindolaimobiliaria.com.br')->send(new ReserveKey($immobile , $contact));
+        \Mail::to('contato@espindolaimobiliaria.com.br')->send(new ReserveKey($immobile , $contact));
         
         Mail::send('email.confirmReserve', ['contact' => $contact, 'immobile' => $immobile ], function ($message) use ($contact,$immobile )
         {
