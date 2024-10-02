@@ -21,34 +21,17 @@
       <link rel="stylesheet" href="{{ url('css/all.css') }}" type="text/css" media="all" >
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-      {{ Html::style('public/assets/pnotify/dist/pnotify.css') }}
-      {{ Html::style('public/assets/pnotify/dist/pnotify.buttons.css') }}
+      {{ Html::style('assets/pnotify/dist/pnotify.css') }}
+      {{ Html::style('assets/pnotify/dist/pnotify.buttons.css') }}
 
       <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-      {{ Html::style('public/assets/jquery-ui/jquery-ui.min.css') }}
-      {{ Html::style('public/assets/ion.rangeSlider-2.2.0/css/ion.rangeSlider.css') }}
-      {{ Html::style('public/assets/ion.rangeSlider-2.2.0/css/ion.rangeSlider.skinHTML5.css') }}
+      {{ Html::style('assets/jquery-ui/jquery-ui.min.css') }}
+      {{ Html::style('assets/ion.rangeSlider-2.2.0/css/ion.rangeSlider.css') }}
+      {{ Html::style('assets/ion.rangeSlider-2.2.0/css/ion.rangeSlider.skinHTML5.css') }}
       <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-      {{ Html::style('public/assets/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css') }}
+      {{ Html::style('assets/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css') }}
       <style type="text/css">
-         #names_distinct{
-         -webkit-columns: 100px 3; /* Chrome, Safari, Opera */
-         -moz-columns: 100px 3; /* Firefox */
-         columns: 100px 3;
-         }
-         .whatsapp-fixo {
-         position: fixed;
-         bottom:10px;
-         left:30px;
-         z-index: 999;
-         float: right;
-         }
-         .whatsapp-fixo > a > i{
-         border-color: green;
-         background: green;
-         color: #fff;
-         border-radius: 30px;
-         }
+        
       </style>
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
       <!--[if lt IE 9]>
@@ -56,21 +39,21 @@
       <script src="js/respond.min.js"></script>
       <![endif]-->
       <!-- Start of espindola Zendesk Widget script -->
+      <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=31fa0b5e-57fe-49ec-b897-5909920d237e"> </script>
       <script>
-         /*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(e){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var e=this.createElement("script");n&&(this.domain=n),e.id="js-iframe-async",e.src="https://assets.zendesk.com/embeddable_framework/main.js",this.t=+new Date,this.zendeskHost="espindola.zendesk.com",this.zEQueue=a,this.body.appendChild(e)},o.write('<body onload="document._l();">'),o.close()}();
-         /*]]>*/
-         
          //GLOBALIZANDO URL
-         var project_survey = ':42000/';
+         var project_survey = '';
          domin  =  window.location.protocol + "//" + window.location.hostname;
          var domain_complet = domin + project_survey; 
          var url = window.location.origin;
          //window.onscroll = function() {scrollFunction()};
 
-            console.log(domain_complet);
 
       </script>
       <!-- End of espindola Zendesk Widget script -->
+
+      <script src="//tag.goadopt.io/injector.js?website_code=7bb59424-366f-4fb1-87e1-ee2cd4ada15c" 
+      class="adopt-injector"></script>
    </head>
       <!-- Google tag (gtag.js) -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYV2STQCQD"></script>
@@ -99,7 +82,7 @@
       <div id="fb-root"></div>
       
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v8.0&appId=1504290103179579&autoLogAppEvents=1" nonce="1PVcfdUf"></script>
-<script src="//tag.goadopt.io/injector.js?website_code=7bb59424-366f-4fb1-87e1-ee2cd4ada15c" class="adopt-injector"></script>  
+ 
 </body>
    <script>
       document.addEventListener("DOMContentLoaded", function() {

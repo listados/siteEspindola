@@ -16,22 +16,22 @@ var contentString = 0;
 var marker = new google.maps.Marker({
     position: map.getCenter(),
     map: map,
-    icon: domain_complet+'public/img/site/pin.png'
+    icon: domain_complet+'/img/site/pin.png'
 });
 
 
-$.get(domain_complet+'showmaps', function(data) {
+$.get(domain_complet+'/showmaps', function(data) {
   $.each(data, function(index, val) {
     //add a marker
     console.log("valor: ".val);
     index = new google.maps.Marker({
       position: new google.maps.LatLng(val.immobiles_latitude, val.immobiles_longitude),
       map: map,
-      icon: domain_complet+'public/img/site/pin.png',
+      icon: domain_complet+'/img/site/pin.png',
       title: val.immobiles_property_title
     });
 
-    val.immobiles_id = '<div class="info-box"><img src="'+domain_complet+'/public/img/site/property-img1.jpg" class="info-box-img" alt="" />'+
+    val.immobiles_id = '<div class="info-box"><img src="'+domain_complet+'/img/site/property-img1.jpg" class="info-box-img" alt="" />'+
                     '<h5>'+val.immobiles_property_title+'</h5>' + 
                     '<p>Endereço: '+val.immobiles_address+', '+val.immobiles_district+', '+val.immobiles_city+
                     '</p><a href="'+domain_complet+'imovel/'+val.immobiles_code+'" class="button small">Detalhes</a><br/></div>';
@@ -58,7 +58,7 @@ $.get(domain_complet+'showmaps', function(data) {
 /****************************************************************/
 
 //show info box for marker1
-var contentString = '<div class="info-box"><img src="'+domain_complet+'/public/img/site/property-img1.jpg" class="info-box-img" alt="" /><h4>587 Smith Avenue</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in ultrices metus' + 
+var contentString = '<div class="info-box"><img src="'+domain_complet+'/img/site/property-img1.jpg" class="info-box-img" alt="" /><h4>587 Smith Avenue</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in ultrices metus' + 
                     ' sit amet [...]</p><a href="#" class="button small">View Details</a><br/></div>';
 
 var infowindow = new google.maps.InfoWindow({ content: contentString });

@@ -6,9 +6,8 @@ function initialize() {
     center: new google.maps.LatLng(lat, log)
   };
 
-var map = new google.maps.Map(document.getElementById('map-single'),
-      mapOptions);
-
+var map = new google.maps.Map(document.getElementById('map-single'), mapOptions);
+console.log({map})
 
 // MARKERS
 /****************************************************************/
@@ -17,7 +16,7 @@ var map = new google.maps.Map(document.getElementById('map-single'),
 var marker = new google.maps.Marker({
     position: map.getCenter(),
     map: map,
-    icon: domain_complet+'public/img/site/pin.png'
+    icon: domain_complet+'/img/site/pin.png'
 });
 
 
@@ -25,7 +24,7 @@ var marker = new google.maps.Marker({
 /****************************************************************/
 
 //show info box for marker1
-var contentString =  '<div class="info-box"><img src="'+domain_complet+'/public/img/site/property-img1.jpg" class="info-box-img" alt="" />'+
+var contentString =  '<div class="info-box"><img src="'+domain_complet+'/img/site/property-img1.jpg" class="info-box-img" alt="" />'+
                     '<h5>'+title+'</h5>' + 
                     '<p>Endereço: '+address+', '+district+', '+city+
                     '</p><a href="'+domain_complet+'imovel/'+codeIm+'" class="button small">Detalhes</a><br/></div>';
