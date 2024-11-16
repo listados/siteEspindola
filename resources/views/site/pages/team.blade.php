@@ -47,7 +47,7 @@
                                     <div class="agent agent-row agent-row-sidebar shadow-hover">
                                         <a href="#" class="agent-img">
                                             <div class="img-fade"></div>
-                                            <img src="{{url('public/img/site/'.$item->teamSites_photo)}}"
+                                            <img src="{{url('img/site/'.$item->teamSites_photo)}}"
                                                  alt="{{$item->teamSites_name}}">
                                         </a>
                                         <div class="agent-content">
@@ -81,45 +81,45 @@
                                     </div>
                                 </div>
                             @endif
-                            {{--                        @if($item->teamSites_office == 'Comercial')--}}
-                            {{--                        <div class="col-lg-12">--}}
-                            {{--                            <h4>Comercial.</h4>--}}
-                            {{--                            <img src="public/img/site/divider-half-blue.png" alt=""><br><br>--}}
-                            {{--                            <div class="agent agent-row agent-row-sidebar shadow-hover">--}}
-                            {{--                                <a href="#" class="agent-img">--}}
-                            {{--                                    <div class="img-fade"></div>--}}
-                            {{--                                    <img src="{{url('public/img/site/'.$item->teamSites_photo)}}" alt="{{$item->teamSites_name}}">--}}
-                            {{--                                </a>--}}
-                            {{--                                <div class="agent-content">--}}
-                            {{--                                    <div class="agent-details">--}}
-                            {{--                                        <h4><a href="#">{{$item->teamSites_name}}</a></h4>--}}
-                            {{--                                        <p><i class="fa fa-tag icon"></i>Comercial</p>--}}
-                            {{--                                        <p><i class="fa fa-phone icon"></i>{{$item->teamSites_phoneOne}}</p>--}}
-                            {{--                                    </div>--}}
-                            {{--                                    <div class="agent-text">--}}
-                            {{--                                        <p>{{$item->teamSites_text}}</p>--}}
-                            {{--                                    </div>--}}
-                            {{--                                    @if ($item->teamSites_linkedin != '')--}}
-                            {{--                                    <div class="agent-footer center">--}}
-                            {{--                                        <ul class="social-icons circle">--}}
-                            {{--                                            <li><a href="{{$item->teamSites_linkedin}}"><i class="fa fa-linkedin"></i></a></li>--}}
-                            {{--                                        </ul>--}}
-                            {{--                                    </div>--}}
-                            {{--                                    @endif--}}
-                            {{--                                </div>--}}
-                            {{--                                <div class="clear"></div>--}}
-                            {{--                            </div>--}}
-                            {{--                        </div>--}}
-                            {{--                        @endif--}}
+                                                    @if($item->teamSites_office == 'Comercial')
+                                                    <div class="col-lg-12">
+                                                        <h4>Comercial.</h4>
+                                                        <img src="public/img/site/divider-half-blue.png" alt=""><br><br>
+                                                        <div class="agent agent-row agent-row-sidebar shadow-hover">
+                                                            <a href="#" class="agent-img">
+                                                                <div class="img-fade"></div>
+                                                                <img src="{{url('public/img/site/'.$item->teamSites_photo)}}" alt="{{$item->teamSites_name}}">
+                                                            </a>
+                                                            <div class="agent-content">
+                                                                <div class="agent-details">
+                                                                    <h4><a href="#">{{$item->teamSites_name}}</a></h4>
+                                                                    <p><i class="fa fa-tag icon"></i>Comercial</p>
+                                                                    <p><i class="fa fa-phone icon"></i>{{$item->teamSites_phoneOne}}</p>
+                                                                </div>
+                                                                <div class="agent-text">
+                                                                    <p>{{$item->teamSites_text}}</p>
+                                                                </div>
+                                                                @if ($item->teamSites_linkedin != '')
+                                                                <div class="agent-footer center">
+                                                                    <ul class="social-icons circle">
+                                                                        <li><a href="{{$item->teamSites_linkedin}}"><i class="fa fa-linkedin"></i></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                @endif
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                    @endif
 
                             @if ($item->teamSites_office == 'Administração de Imóveis')
                                 <div class="col-lg-12">
                                     <h4>Administração de Imóveis</h4>
-                                    <img src="public/img/site/divider-half-blue.png" alt=""><br><br>
+                                    <img src="img/site/divider-half-blue.png" alt=""><br><br>
                                     <div class="agent agent-row agent-row-sidebar shadow-hover">
                                         <a href="#" class="agent-img">
                                             <div class="img-fade"></div>
-                                            <img src="{{url('public/img/site/'.$item->teamSites_photo)}}"
+                                            <img src="{{url('img/site/'.$item->teamSites_photo)}}"
                                                  alt="{{$item->teamSites_name}}">
                                         </a>
                                         <div class="agent-content">
@@ -182,11 +182,11 @@
                             @if ($item->teamSites_office == 'Equipe Jurídico')
                                 <div class="col-lg-12">
                                     <h4>Equipe Jurídico</h4>
-                                    <img src="public/img/site/divider-half-blue.png" alt=""><br><br>
+                                    <img src="img/site/divider-half-blue.png" alt=""><br><br>
                                     <div class="agent agent-row agent-row-sidebar shadow-hover">
                                         <a href="#" class="agent-img">
                                             <div class="img-fade"></div>
-                                            <img src="{{url('public/img/site/'.$item->teamSites_photo)}}"
+                                            <img src="{{url('img/site/'.$item->teamSites_photo)}}"
                                                  alt="{{$item->teamSites_name}}">
                                         </a>
                                         <div class="agent-content">
