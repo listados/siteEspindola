@@ -30,10 +30,10 @@
 					Qualquer dúvida pode entre em contato com nos fones.
 					<ul>
 						<li>
-							<strong>Agência Aldeota:</strong> (85) 3461-1166 | 98810-1166
+							<strong>Agência Aldeota:</strong> (85) 3461-1166 | 98970-4898
 						</li>
 						<li>
-							<strong>Agência Fátima:</strong> (85) 3038-0014 | 98970-4899
+							<strong>Agência Fátima:</strong> (85) 3038-0014 | 98970-4898
 						</li>
 					</ul>
 				</p>

@@ -151,7 +151,7 @@
                                     </p>
                                     <div class="form-block text-center">
                                         <p>
-                                            <a href="https://api.whatsapp.com/send?phone=5585988101166&text=Ol%C3%A1,%20eu%20estou%20com%20uma%20d%C3%BAvida,%20poderia%20me%20ajudar?" class="saiba-mais" target="_blank">
+                                            <a href="https://api.whatsapp.com/send?phone=5585989704898&text=Ol%C3%A1,%20eu%20estou%20com%20uma%20d%C3%BAvida,%20poderia%20me%20ajudar?" class="saiba-mais" target="_blank">
                                                 Reservar pelo Whatsapp
                                             </a>
                                         </p>
@@ -176,7 +176,7 @@
                                 </p>
                                 <div class="form-block text-center">
                                     <p>
-                                        <a href="https://api.whatsapp.com/send?phone=5585988101166&text=Ol%C3%A1,%20eu%20estou%20com%20uma%20d%C3%BAvida,%20poderia%20me%20ajudar?" class="saiba-mais" target="_blank">
+                                        <a href="https://api.whatsapp.com/send?phone=5585989704898&text=Ol%C3%A1,%20eu%20estou%20com%20uma%20d%C3%BAvida,%20poderia%20me%20ajudar?" class="saiba-mais" target="_blank">
                                             Agendar
                                         </a>
                                     </p>

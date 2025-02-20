@@ -52,7 +52,7 @@
                   WhatsApp<br/>
                   <span style="font-size: 14px;">(85) 98970-4898  ( Ag. Aldeota )</span>
                   <br>
-                  <span style="font-size: 14px;">(85) 98970-4899 ( Ag. Fátima )</span>
+                  <span style="font-size: 14px;">(85) 98970-4898 ( Ag. Fátima )</span>
                 </td>
               </tr>
             </table>
