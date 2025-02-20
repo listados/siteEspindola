@@ -74,7 +74,7 @@
           <div class="container-fixed">
 
             <div class="member-actions right">
-              <a href="https://api.whatsapp.com/send?phone=5585988101166&text=Gostaria de anunciar o meu imóvel" target="_blank" data-action="share/whatsapp/share"  class="button small alt button-icon"><i class="fa fa-plus"></i>Anuncie seu imóvel</a>
+              <a href="https://api.whatsapp.com/send?phone=5585989704898&text=Gostaria de anunciar o meu imóvel" target="_blank" data-action="share/whatsapp/share"  class="button small alt button-icon"><i class="fa fa-plus"></i>Anuncie seu imóvel</a>
             </div>
             <ul class="nav navbar-nav right">
 

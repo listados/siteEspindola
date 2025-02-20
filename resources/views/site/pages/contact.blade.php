@@ -55,7 +55,7 @@
             <i class="fa fa-whatsapp"></i>
             <h4>Whatsapp</h4>
             <p>
-                <a href="https://api.whatsapp.com/send?phone=55859988101166&text=Olá, eu gostaria de algumas informações." class="btn btn-success" target="_blank">Fale agora com nosso atendente</a>
+                <a href="https://api.whatsapp.com/send?phone=5585989704898&text=Olá, eu gostaria de algumas informações." class="btn btn-success" target="_blank">Fale agora com nosso atendente</a>
             </p>
             
           </div>
