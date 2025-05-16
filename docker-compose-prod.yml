@@ -14,8 +14,8 @@ services:
             - './phpdocker/mysql/data:/var/lib/mysql'
         environment:
             - MYSQL_ROOT_PASSWORD=livre
-            - MYSQL_DATABASE=vistoria
-            # - MYSQL_USER=root
+            - MYSQL_DATABASE=site
+            - MYSQL_USER=admin
             - MYSQL_PASSWORD=livre
         ports:
             - '42002:3306'
