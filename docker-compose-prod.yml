@@ -9,7 +9,7 @@ services:
     mysql:
         image: 'mysql:5.7'
         working_dir: /application
-        container_name: 'dbvistoria-vue'
+        container_name: 'site_db'
         volumes:
             - './phpdocker/mysql/data:/var/lib/mysql'
         environment:
@@ -18,13 +18,13 @@ services:
             # - MYSQL_USER=root
             - MYSQL_PASSWORD=livre
         ports:
-            - '50001:3306'
+            - '42002:3306'
         networks:
             - nginx-proxy_default
 
     webserver:
         image: 'nginx:alpine'
-        container_name: 'webvistoria-vue'
+        container_name: 'siteweb-vue'
         working_dir: /application
         volumes:
             - '.:/application'
@@ -32,16 +32,16 @@ services:
         ports:
             - '5050:80'
         environment:
-            - VIRTUAL_HOST=listadosvistoria.sytes.net
-            - LETSENCRYPT_HOST=listadosvistoria.sytes.net
-            - LETSENCRYPT_EMAIL=franciscoanto@gmail.com
+            - VIRTUAL_HOST=${VIRTUAL_HOST}
+            - LETSENCRYPT_HOST=${LETSENCRYPT_HOST}
+            - LETSENCRYPT_EMAIL=${LETSENCRYPT_EMAIL}
         networks:
             - nginx-proxy_default
 
     php-fpm:
         build: phpdocker/php-fpm
         working_dir: /application
-        container_name: phpvistoria
+        container_name: site_php
         volumes:
             - '.:/application'
             - '.env:/application/.env'
