@@ -38,7 +38,10 @@ Route::get('maps' , function(){
 Route::post('searchadvance' , 'SiteController@searchAdvance');
 Route::get('ip' , 'SiteController@getIp');
 Route::post('adicionar-ip' , 'SiteController@setIpLocation');
-Route::resource('/'  , 'SiteController');
+// Route::resource('/'  , 'SiteController');
+Route::get('/' , function(){
+	 return redirect('https://www.nomadesimobiliaria.com/');
+});
 
 Auth::routes();
 
